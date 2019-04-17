@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+
+@import "_mixins/font-face";
+
+@include font-face ("OpenSans", "../fonts/OpenSans/Regular/OpenSans-Regular", normal);
+@include font-face ("OpenSans", "../fonts/OpenSans/Bold/OpenSans-Bold", bold);
+@include font-face ("Montserrat", "../fonts/Montserrat/Regular/Montserrat-Regular", normal);
+@include font-face ("Montserrat", "../fonts/Montserrat/Bold/Montserrat-Bold", bold);
+@include font-face ("Circe", "../fonts/Circe/Bold/Circe-Bold", bold);
+@include font-face ("Circe", "../fonts/Circe/Regular/Circe-Regular", normal);

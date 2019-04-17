@@ -1,0 +1,328 @@
+
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.s-service {
+    background-image: none;
+    background-color: #efede8;
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .hamburger {
+    display: none;
+  }    
+
+  .header {
+    padding: 10px 0;    
+  }
+
+  .footer {
+    text-align: center;
+
+    .header {
+      &__content {
+        flex-direction: column;
+  
+        & > * {
+            margin: 0 0 20px 0 !important;            
+        }
+      }
+    }
+  }
+
+	.main-menu {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 89px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 0;
+    z-index: 98;
+    padding: 10px 0;
+
+		ul {
+			display: block;
+			height: auto;
+      padding: 0;
+      margin: 0;
+
+			li {
+        margin: 0 0 5px;
+
+        &:last-child {
+          margin: 0;
+        }
+			}
+		}
+  }    
+
+  .s {
+    &-main {
+      padding: 150px 0 70px;
+      &__img {
+        position: relative;
+        right: 0;
+        margin: 50px auto 0;
+      }
+    }
+
+    &-beginner {
+      &__text {
+        margin: 50px auto 30px 0;
+      }
+    }
+
+    &-reviews {
+      .review {
+        margin-bottom: 30px;
+        &__quote {
+          // display: none;
+          margin-right: 10px;
+        }
+        &__text {
+          font-size: 20px;
+        }
+        &__name, &__post {
+          font-size: 20px;
+        }
+        &__block {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &-company {
+      .company {
+        &__title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+
+  .form {
+    &--horizontal {
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    max-width: 215px;
+  }
+
+  .header {
+    .grow {
+      display: block;
+    }
+  }
+
+  .section {
+    &-title {
+      font-size: 24px;
+    }      
+  }
+
+  .s {
+    &-main {
+      
+    }
+    
+    &-business {
+      .business {
+        margin-bottom: 50px;
+        &__img {
+          margin-bottom: 20px;
+        }
+        &__title {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-service {
+      &__content {
+        display: none;
+      }
+      .carousel-service {
+        display: block;
+      }
+      .service {
+        padding: 25px 15px;
+        &__title {
+          font-size: 18px;
+          min-height: 70px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &-beginner {
+      &__title {
+        font-size: 24px;
+      }
+      &__img {
+        display: none;
+      }
+      &__text {
+        margin: 30px auto 20px 0;
+        font-size: 19px;
+      }
+    }
+
+    &-transaction {
+      ul {
+        li {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-question {
+      &__text {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .break {
+    display: inline;
+  }
+
+  .remodal {
+    &__title {
+      font-size: 25px;
+    }
+  }
+
+  .call-me {
+    display: flex;
+  }
+
+  .header {
+    &__phone {
+      &__title {
+        display: none;
+      }      
+    }
+    &__info {
+      display: none;
+    }
+    .logo {
+      line-height: 0.7;
+    }
+  }
+
+  .s {
+    &-main {
+      &__title {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      &__text {
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      &__question {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-service {
+      .service {
+        max-width: 210px;
+      }
+    }
+
+    &-reviews {
+      .carousel-reviews {
+        padding: 0;
+      }
+      .review {
+        &__quote {
+          margin-right: 5px;
+        }
+        &__text {
+          font-size: 16px;
+        }
+        &__post, &__name {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-thanks {
+      padding: 150px 0 50px;
+      
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
