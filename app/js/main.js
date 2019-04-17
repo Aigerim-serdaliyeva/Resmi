@@ -176,7 +176,10 @@ $(document).ready(function () {
 
   $(".more").click( function() {
     $(this).parent(".service").addClass("d-none").siblings(".service--none").addClass("d-block");
+  });
 
+  $(".service__close").click( function() {
+    $(this).parent(".service--none").removeClass("d-block").siblings(".service").removeClass("d-none");
   });
 
 
