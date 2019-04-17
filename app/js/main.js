@@ -174,6 +174,11 @@ $(document).ready(function () {
     }
   });
 
+  $(".more").click( function() {
+    $(this).parent(".service").addClass("d-none").siblings(".service--none").addClass("d-block");
+
+  });
+
 
   $(".carousel-reviews").owlCarousel({
     loop: true,
