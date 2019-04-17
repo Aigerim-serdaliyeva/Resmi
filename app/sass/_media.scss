@@ -221,9 +221,23 @@
     display: inline;
   }
 
+  .callback__wrapper {
+    display: block !important; 
+  }
+
   .remodal {
+    padding: 30px 15px;
     &__title {
       font-size: 25px;
+    }
+  }
+
+  .more {
+    ul {
+      li {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -263,7 +277,7 @@
 
     &-service {
       .service {
-        max-width: 210px;
+        max-width: 200px;
       }
     }
 

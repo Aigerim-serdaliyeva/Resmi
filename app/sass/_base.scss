@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-top {
 	position: fixed;
-	bottom: 20px;
+	bottom: 70px;
 	right: -100px;
 	z-index: 99;
 	cursor: pointer;
@@ -157,40 +157,66 @@ h1, h2, h3, h4, h5, h6 {
 		opacity: 1;
 	}
 }
-
-.call-me {
-  position: fixed;
-	bottom: 20px;
-	left: 20px;
-	z-index: 99;
-	cursor: pointer;
-  @include circle(50px);
-  background-color: #58ea00;
-  cursor: pointer;
-  display: none;
-
-  .fa {
-    color: #fff;
-    font-size: 25px;
-    position: relative;
-    top: 1px;
+  
+  
+.callback {
+  &__wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #43a047;
+    z-index: 1000;
+    display: none;
   }
 
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: -15px;
-    bottom: -15px;
-    border: 1px solid #58ea00;
-    border-radius: 50%;
-    animation: pulse 1.5s linear infinite;
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0;
   }
 
-  &:after {
-    animation-delay: 0.5s;
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+
+    a {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto 5px;
+    width: 40px;
+    height: 28px;
+  }
+
+  &__whatsapp {
+    background: url(https://nurbol-sarsenbayev.github.io/cdn/svg/whatsapp-icon.svg) no-repeat center;
+  }
+
+  &__phone {
+    background: url(https://nurbol-sarsenbayev.github.io/cdn/svg/phone-icon.svg) no-repeat center;
   }
 }
 
@@ -233,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &:hover {
-    
+    background-color: #29b8b9;
   }    
 
   &:active {
@@ -434,6 +460,7 @@ h1, h2, h3, h4, h5, h6 {
       background: #c1c2c3 !important;
       margin: 0 5px;
       border-radius: 50%;
+
 
       &.active {
         background: $accent !important;
