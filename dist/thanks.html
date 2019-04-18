@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>RESMI consult</title>
+  <meta name="description" content="RESMI consult">
+  <meta name="keywords" content="RESMI consult">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=1" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    <a href="tel:+77770022216" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <header class="header header--back">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__aside d-none d-lg-block">
+            Пн-Пт с 09.00 по 18.00 <br>
+            РК, г. Алматы, ул. Гоголя 150
+          </div>
+
+          <a href="/" class="logo">
+            RESMI <span>consult</span>
+          </a>
+
+          <div class="header__phone">
+            <div class="header__info">Пишите: <a href="#">info@resmiconsult.kz</a></div>
+            <div class="header__phone__block">
+              <div class="header__phone__title">Звоните:</div>
+              <div class="header__phone__tel">
+                <a href="tel:+77770022216" class="text-phone" id="phone_number">+7 777 00-222-16</a> <br>
+                <a href="tel:+77273445611" class="text-phone" id="phone_number">+7 (727) 344-56-11</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <!-- <nav class="main-menu">
+          <div class="container">
+            <ul>
+              <li class="link">
+                <a href="#main">Главная</a>
+              </li>
+              <li class="link">
+                <a href="#service">Услуги</a>
+              </li>
+              <li class="link last">
+                <a href="#contact">Контакты</a>
+              </li>
+              <li class="d-lg-none">
+                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
+              </li>
+              <li class="d-lg-none">
+                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
+              </li>
+            </ul>
+          </div>
+        </nav> -->
+      </div>
+    </header>
+
+    <section class="section s-thanks">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 offset-lg-1">
+            <div class="s-thanks__title">Спасибо!</div>
+            <div class="s-thanks__text">Ваша заявка успешно принята. <br>
+                В ближайшее время мы свяжемся с Вами!</div>
+            <a href="/" class="s-thanks__link">Вернуться на главную</a>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer inverse">
+        <div class="container">
+          <div class="header__content">
+            <div class="header__aside">
+              Пн-Пт с 09.00 по 18.00 <br>
+              РК, г. Алматы, ул. Гоголя 150
+            </div>
+  
+            <a href="/" class="logo">
+              RESMI <span>consult</span>
+            </a>
+  
+            <div class="header__phone">
+              <div class="header__info">Пишите: <a href="#">info@resmiconsult.kz</a></div>
+              <div class="header__phone__block">
+                <div class="header__phone__title">Звоните:</div>
+                <div class="header__phone__tel">
+                  <a href="tel:+77770022216" class="text-phone" id="phone_number">+7 777 00-222-16</a> 
+                  <!-- <a href="tel:+77273445611" class="text-phone" id="phone_number">+7 (727) 344-56-11</a> -->
+                </div>
+              </div>
+            </div>
+          </div>       
+        </div>
+      </footer>
+    </div>
+
+  <div class="remodal remodal--small" data-remodal-id="ostavit-zayavku" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку и мы с Вами свяжемся!</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Введите имя*" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required minlength="10">
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <div class="input-div">
+            <input type="email" class="input" name="email" placeholder="Введите e-mail" minlength="10">
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
